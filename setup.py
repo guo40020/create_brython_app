@@ -4,7 +4,8 @@ setup(
         name='create_brython_app',
         version='0.0.1',
         packages=['create_brython_app'],
-        package_data={'brython.min.js': ['brython.min.js'], 'brython_stdlib.js': ['brython_stdlib.js'], 'template.html': ['template.html'], 'eel.js': ['eel.js']},
+        package_dir={'create_brython_app': 'create_brython_app'},
+        package_data={'create_brython_app': ['*'],},
         url='',
         # scripts=['bin/create_brython_app.py'],
         entry_points={
