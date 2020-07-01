@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="/create_brython_app/eel.js_brython_app/eel.js"></script>
-	<script src="/create_brython_app/brython.min.js_app/brython.min.js"></script>
-	<script src="/create_brython_app/brython_stdlib.jsp/brython_stdlib.js"></script>
+	<script src="/eel/eel.js"></script>
+	<script src="/dependencies/brython.min.js"></script>
+	<script src="/dependencies/brython_stdlib.js"></script>
+	<script type="text/python" src="python/demo.py"></script>
+	<link rel="stylesheet" href="/dependencies/styleHelper.css">
+	<link rel="stylesheet" href="/dependencies/tailwind.min.css">
 	<title>{{app_name}}</title>
 </head>
-<body>
-
+<body onload="brython()">
+	<div class="center-screen">
+		<div class="center-child shadow rounded-lg p-2">
+			<canvas id="clock" width="250" height="250"></canvas>
+		</div>
+	</div>
 </body>
 </html>

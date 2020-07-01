@@ -1,4 +1,4 @@
-from create_brython_app import main
+from create_brython_app import create
 
 
-main()
+create()

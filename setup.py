@@ -7,7 +7,6 @@ setup(
         package_dir={'create_brython_app': 'create_brython_app'},
         package_data={'create_brython_app': ['*'],},
         url='',
-        # scripts=['bin/create_brython_app.py'],
         entry_points={
                 'console_scripts': ['create_brython_app=create_brython_app:main'],
         },
